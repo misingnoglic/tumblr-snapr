@@ -5,7 +5,6 @@ from tumblpy import Tumblpy
 from secrets import tumblr_oauth_key , tumblr_secret_key, tumblr_token, tumblr_token_secret
 
 
-print tumblr_oauth_key , tumblr_secret_key, tumblr_token, tumblr_token_secret
 t = Tumblpy( tumblr_oauth_key, tumblr_secret_key, tumblr_token, tumblr_token_secret)
 
 blog_url = t.post('user/info')
