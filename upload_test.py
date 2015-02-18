@@ -13,5 +13,5 @@ blog_url = blog_url['user']['blogs'][0]['url']
 
 photo = open('content/image.jpg')
 
-post = t.post('post', blog_url=blog_url, params={'type':'photo', 'caption': 'Test Caption', 'data': photo})
+post = t.post('post', blog_url=blog_url, params={'type':'photo', 'caption': 'Test Caption', 'data': photo, 'tags':"stuff"})
 print post  # returns id if posted successfully
